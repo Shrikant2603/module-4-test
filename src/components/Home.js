@@ -5,12 +5,10 @@ import SingleProduct from './singleproduct/SingleProduct';
 
 const Home = (props) => {
   const [content, setContent] = useState([])
-  console.log(props)
   const fetchTrending = async () => {
     const { data } = await axios.get(
       "https://dummyjson.com/products"
     );
-      console.log(data.products)
     setContent(data.products);
   };
 

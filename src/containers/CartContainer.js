@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { checkout, removeFromCart } from '../services/actions/action'
 
 const mapStateToProps = (state) => ({
-  cartItems: state.cart,
+  cartItems: state.cartReducer
 })
 
 const mapDispatchToProps = dispatch => ({
