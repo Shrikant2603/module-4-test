@@ -1,0 +1,12 @@
+.heading{
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+}
+.homepage{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
