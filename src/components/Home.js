@@ -5,7 +5,7 @@ import SingleProduct from './singleproduct/SingleProduct';
 
 const Home = (props) => {
   const [content, setContent] = useState([])
-
+  console.log(props)
   const fetchTrending = async () => {
     const { data } = await axios.get(
       "https://dummyjson.com/products"
@@ -19,6 +19,7 @@ const Home = (props) => {
     fetchTrending();
     // eslint-disable-next-line
   }, []);
+  
   return (
     <div>
         <h1 className='heading'>All Items</h1>
